@@ -10,13 +10,13 @@
   
 Updated: **August 15, 2025**  
   
+This repo contains Plugins for Oblivion - OBSE, including a Plugin Example (**Status: Tested and Working**).  
+  
 **OBSE** is an SDK created by [Ian Patterson](https://github.com/ianpatt), which extends the functionality of **Oblivion** for mod authors.  
 The original SDK used for building the OBSE EXE can be found here: [OBSE](https://obse.silverlock.org/)   
 Using OBSE in your mod will then make OBSE a **Dependency** which you must must inform your users of and provide a link to.  
   
-This repo contains Plugins for Oblivion - OBSE, including a Plugin Example (**Status: Tested and Working**).  
-  
-This mirror of the SDK is currently set to support Oblivion runtime: **1.2.26.0 (0x010201A0)** - OBSE build: **0.0.21.4**, other versions will need to be manually configured.  
+This mirror of the SDK is currently set to support Oblivion runtime version: **1.2.26.0** - OBSE version: **0.0.21.4**, other versions will need to be manually configured.  
 It has also been pre-configured to build **Plugins** and is not intended for building the full EXE (Core and Loader).  
   
 All necessary projects have been migrated to and built with **Visual Studio 2022 (v143)**, which can be downloaded here: [Visual Studio 2020](https://visualstudio.microsoft.com/downloads/)   
@@ -24,7 +24,9 @@ All necessary projects have been migrated to and built with **Visual Studio 2022
 > [!IMPORTANT]  
 > Currently, the lean method produces compile errors. Use the lib method for now.
 
-
+  
+[Back to top](#obse-plugins)  
+  
 ## Construction:  
   
 To build plugins, open "OBSE-Plugins/obse_plugins" and then open the plugin folder you want to build. EG: **ez_obse_plugin_example**.  
@@ -53,7 +55,9 @@ Post compile options have been removed for all projects, but can be re-added in-
 > Because the Ez plugin example registers new functions, it requires an OpcodeBase variable that **must be** requested from the OBSE team **before releasing to the public**!  
 > The default OpcodeBase that this example plugins uses (**0x2000**) will conflict will all other plugins that use the same OpcodeBase!  
 > If you need functions that require the OpcodeBase variable, then request a new OpcodeBase range from the OBSE team.  
-
+  
+[Back to top](#obse-plugins)  
+  
 ## Integration:  
   
 Integrating the example plugin with Oblivion involves creating a new Plugin Script which interfaces with the plugin dll.  
@@ -84,7 +88,9 @@ Begin GameMode
 End  
 ```
  * Save the script.
-
+  
+[Back to top](#obse-plugins)  
+  
 ## Duplication:  
   
 Duplicating the plugin example to make your own plugin is quite easy if you follow these steps:  
@@ -115,7 +121,7 @@ System.Guid.NewGuid().ToString().ToUpper()
  * Replace "ProjectGuid" with the GUID you generated above, this must be unique to the project.  
  * Replace "ProjectName" and "RootNamespace" to your new plugins "short" name. EG:  
 ```
-    <ProjectGuid>{XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX}</ProjectGuid>  
+    <ProjectGuid>{11111111-2222-3333-4444-555555555555}</ProjectGuid>  
     <ProjectName>my_cool_new_plugin</ProjectName>  
     <RootNamespace>my_cool_new_plugin</RootNamespace>  
 ```
@@ -140,9 +146,12 @@ Select your new "my_cool_new_plugin.vcxproj" or "my_cool_new_plugin_lean.vcxproj
 Select a Configuration (Debug or Release) and then Build the solution to test it.  
 After completion, open the ./Builds/Configuration/ folder and there should be your new dll file. EG: **my_cool_new_plugin.dll**  
   
+[Back to top](#obse-plugins)  
+  
 ## Donation:  
   
 If you enjoy and/or find this content useful, consider [buying me a coffee!](https://www.paypal.com/donate/?hosted_button_id=757K44LRCMVRW) :coffee:  
   
+[Back to top](#obse-plugins)
 
 
