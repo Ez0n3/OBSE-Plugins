@@ -5,11 +5,7 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "common", "..\..\common\common.vcxproj", "{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obse", "..\..\obse\obse\obse.vcxproj", "{01B76B21-F851-436E-ACEA-64FA03BE8C59}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "obse-core", "obse-core", "{A0663F7B-4E8E-4959-9335-EB4B36B56785}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obse_plugin_example", "obse_plugin_example.vcxproj", "{D4DDA734-7E93-4581-8F82-32BB738F69FE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obse_plugin_example_lean", "obse_plugin_example_lean.vcxproj", "{D4DDA734-7E93-4581-8F82-32BB738F69FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +17,6 @@ Global
 		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Debug|x86.Build.0 = Debug|Win32
 		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|x86.ActiveCfg = Release|Win32
 		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6}.Release|x86.Build.0 = Release|Win32
-		{01B76B21-F851-436E-ACEA-64FA03BE8C59}.Debug|x86.ActiveCfg = Debug|Win32
-		{01B76B21-F851-436E-ACEA-64FA03BE8C59}.Debug|x86.Build.0 = Debug|Win32
-		{01B76B21-F851-436E-ACEA-64FA03BE8C59}.Release|x86.ActiveCfg = Release|Win32
-		{01B76B21-F851-436E-ACEA-64FA03BE8C59}.Release|x86.Build.0 = Release|Win32
 		{D4DDA734-7E93-4581-8F82-32BB738F69FE}.Debug|x86.ActiveCfg = Debug|Win32
 		{D4DDA734-7E93-4581-8F82-32BB738F69FE}.Debug|x86.Build.0 = Debug|Win32
 		{D4DDA734-7E93-4581-8F82-32BB738F69FE}.Release|x86.ActiveCfg = Release|Win32
@@ -32,10 +24,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{20C6411C-596F-4B85-BE4E-8BC91F59D8A6} = {A0663F7B-4E8E-4959-9335-EB4B36B56785}
-		{01B76B21-F851-436E-ACEA-64FA03BE8C59} = {A0663F7B-4E8E-4959-9335-EB4B36B56785}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {85321457-63D4-4779-8553-763978009E6D}
