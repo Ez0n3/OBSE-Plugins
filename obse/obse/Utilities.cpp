@@ -4,7 +4,7 @@
 #include "GameAPI.h"
 #include "Script.h"
 #include "GameOSDepend.h"
-#include <DbgHelp.h> // Added like xOBSE
+#include <DbgHelp.h> // Added for VS2020 - like xOBSE
 
 void PrintItemType(TESForm * form)
 {

@@ -66,7 +66,7 @@ bool Cmd_PluginExampleFunctionsTest_Execute(COMMAND_ARGS)
 	return true;
 }
 
-#endif
+#endif // RUNTIME
 
 // Define the example test bool function, including a description of what it does
 // Note: Outside of the RUNTIME def, for the editor also
