@@ -1,313 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug 1_1_0_511|Win32">
-      <Configuration>Debug 1_1_0_511</Configuration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug 1_2_0_214|Win32">
-      <Configuration>Debug 1_2_0_214</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug 1_2_0_416|Win32">
-      <Configuration>Debug 1_2_0_416</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release 1_1_0_511|Win32">
-      <Configuration>Release 1_1_0_511</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release 1_2_0_214|Win32">
-      <Configuration>Release 1_2_0_214</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release 1_2_0_416|Win32">
-      <Configuration>Release 1_2_0_416</Configuration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{01B76B21-F851-436E-ACEA-64FA03BE8C59}</ProjectGuid>
+    <ProjectName>obse</ProjectName>
     <RootNamespace>obse</RootNamespace>
-    <SccProjectName>Perforce Project</SccProjectName>
-    <SccLocalPath>..\..</SccLocalPath>
-    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
     <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="..\..\config\_Plugins.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+	<UseDebugLibraries>true</UseDebugLibraries>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'" Label="PropertySheets">
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
     <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'">Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'">Debug\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'">Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'">Release\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'">$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'">$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'">$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'">$(Configuration)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'">$(Configuration)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'">false</LinkIncremental>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_$(SeRuntimeVersion)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_$(SeRuntimeVersion)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OBSE_EXPORTS;OBLIVION=1;OBLIVION_VERSION=0x010101FF;OBSE_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
+      <PreprocessorDefinitions>_DEBUG;DEBUG=0;WIN32;_WINDOWS;_USRDLL;OBSE_EXPORTS;OBLIVION=1;OBLIVION_VERSION=$(SeRuntimeVersion);OBSE_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+	  <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AssemblerOutput>
-      </AssemblerOutput>
-      <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <ForcedIncludeFiles>StdAfx.h;obse_common/obse_prefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>obse_common/obse_prefix.h;StdAfx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)obse.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
-      <BaseAddress>
-      </BaseAddress>
-      <ImportLibrary>$(OutDir)obse.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
-    <PostBuildEvent>
-      <Message>Installing DLL...</Message>
-      <Command>copy "$(TargetPath)" "$(OblivionPath)\obse_1_2_416.dll"</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OBSE_EXPORTS;OBLIVION=1;OBLIVION_VERSION=0x010101FF;OBSE_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
+	  <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;_USRDLL;OBSE_EXPORTS;OBLIVION=1;OBLIVION_VERSION=$(SeRuntimeVersion);OBSE_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+	  <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ForcedIncludeFiles>StdAfx.h;obse_common/obse_prefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ForcedIncludeFiles>obse_common/obse_prefix.h;StdAfx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
-      <BaseAddress>
-      </BaseAddress>
-      <ImportLibrary>$(OutDir)obse.lib</ImportLibrary>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Link>
-    <PostBuildEvent>
-      <Message>Installing DLL...</Message>
-      <Command>copy "$(TargetPath)" "$(OblivionPath)\obse_1_2_416.dll"</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'">
-    <ClCompile>
-      <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OBSE_EXPORTS;OBLIVION=1;OBLIVION_VERSION=0x010200D6;OBSE_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <AssemblerOutput>
-      </AssemblerOutput>
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <ForcedIncludeFiles>StdAfx.h;obse_common/obse_prefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-    </ClCompile>
-    <Link>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)obse.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
-      <BaseAddress>
-      </BaseAddress>
-      <ImportLibrary>$(OutDir)obse.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
-    <PostBuildEvent>
-      <Message>Installing DLL...</Message>
-      <Command>copy "$(TargetPath)" "$(OblivionPath)\obse_1_2_416.dll"</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OBSE_EXPORTS;OBLIVION=1;OBLIVION_VERSION=0x010200D6;OBSE_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ForcedIncludeFiles>StdAfx.h;obse_common/obse_prefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-    </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <SubSystem>Windows</SubSystem>
-      <OptimizeReferences>true</OptimizeReferences>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
-      <BaseAddress>
-      </BaseAddress>
-      <ImportLibrary>$(OutDir)obse.lib</ImportLibrary>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Link>
-    <PostBuildEvent>
-      <Message>Installing DLL...</Message>
-      <Command>copy "$(TargetPath)" "$(OblivionPath)\obse_1_2_416.dll"</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'">
-    <ClCompile>
-      <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OBSE_EXPORTS;OBLIVION=1;OBLIVION_VERSION=0x010201A0;OBSE_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <MinimalRebuild>true</MinimalRebuild>
-      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <AssemblerOutput>
-      </AssemblerOutput>
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <ForcedIncludeFiles>StdAfx.h;obse_common/obse_prefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-    </ClCompile>
-    <Link>
-      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(OutDir)obse.pdb</ProgramDatabaseFile>
-      <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
-      <BaseAddress>
-      </BaseAddress>
-      <ImportLibrary>$(OutDir)obse.lib</ImportLibrary>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Link>
-    <PostBuildEvent>
-      <Message>Installing DLL...</Message>
-      <Command>copy "$(TargetPath)" "$(OblivionPath)\obse_1_2_416.dll"</Command>
-    </PostBuildEvent>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OBSE_EXPORTS;OBLIVION=1;OBLIVION_VERSION=0x010201A0;OBSE_CORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <PrecompiledHeader>Use</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ForcedIncludeFiles>StdAfx.h;obse_common/obse_prefix.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-    </ClCompile>
-    <Link>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <SubSystem>Windows</SubSystem>
-      <OptimizeReferences>true</OptimizeReferences>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
-      <BaseAddress>
-      </BaseAddress>
-      <ImportLibrary>$(OutDir)obse.lib</ImportLibrary>
-      <TargetMachine>MachineX86</TargetMachine>
-    </Link>
-    <PostBuildEvent>
-      <Message>Installing DLL...</Message>
-      <Command>copy "$(TargetPath)" "$(OblivionPath)\obse_1_2_416.dll"</Command>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\common\common.vcxproj">
@@ -318,12 +113,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\StdAfx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="GameActorValues.cpp" />
     <ClCompile Include="GameAPI.cpp" />
@@ -407,15 +198,9 @@
     <ClCompile Include="Serialization.cpp" />
     <ClCompile Include="ArrayVar.cpp" />
     <ClCompile Include="CommandTable.cpp">
-      <ExpandAttributedSource Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'">false</ExpandAttributedSource>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug 1_1_0_511|Win32'">AssemblyAndSourceCode</AssemblerOutput>
-      <ExpandAttributedSource Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'">false</ExpandAttributedSource>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_214|Win32'">AssemblyAndSourceCode</AssemblerOutput>
-      <ExpandAttributedSource Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'">false</ExpandAttributedSource>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug 1_2_0_416|Win32'">AssemblyAndSourceCode</AssemblerOutput>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release 1_1_0_511|Win32'">AssemblyAndSourceCode</AssemblerOutput>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_214|Win32'">AssemblyAndSourceCode</AssemblerOutput>
-      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release 1_2_0_416|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <ExpandAttributedSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExpandAttributedSource>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AssemblyAndSourceCode</AssemblerOutput>
     </ClCompile>
     <ClCompile Include="EventManager.cpp" />
     <ClCompile Include="FunctionScripts.cpp" />
@@ -430,7 +215,6 @@
     <ClCompile Include="Tasks.cpp" />
     <ClCompile Include="ThreadLocal.cpp" />
     <ClCompile Include="Utilities.cpp" />
-    <ClCompile Include="obse.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\StdAfx.h" />
@@ -534,7 +318,6 @@
     <ClInclude Include="ThreadLocal.h" />
     <ClInclude Include="Utilities.h" />
     <ClInclude Include="VarMap.h" />
-    <ClInclude Include="obse.h" />
     <ClInclude Include="..\obse_common\obse_prefix.h" />
     <ClInclude Include="..\obse_common\obse_version.h" />
   </ItemGroup>
