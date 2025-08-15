@@ -25,6 +25,12 @@ All necessary projects have been migrated to and built with **Visual Studio 2022
 > Currently, the lean method produces compile errors. Use the lib method for now.
 
   
+> [!TIP]  
+> See Also:  
+> [xOBSE](https://github.com/Ez0n3/xOBSE-Plugins)  
+> [OBSE64](https://github.com/Ez0n3/OBSE64-Plugins)  
+
+  
 [Back to top](#obse-plugins)  
   
 ## Construction:  
